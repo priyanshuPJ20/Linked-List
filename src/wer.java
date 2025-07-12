@@ -42,6 +42,23 @@ public class wer {
         temp.next=node;
         size++;
     }
+    public int deleteLast(){
+        if(size<=1){
+            return deleteFirst();
+        }
+        Node secondLast=get(size-2);
+        int val=tail.value;
+        tail=secondLast;
+        tail.next=null;
+        return val;
+    }
+    public Node get(int index){
+        Node node=head;
+        for (int i = 0; i < index; i++) {
+            node=node.next;
+        }
+        return node;
+    }
     public int deleteFirst(){
         int val= head.value;
         head=head.next;

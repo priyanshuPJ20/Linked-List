@@ -42,6 +42,7 @@ public class LL {
         temp.next=node;
         size++;
     }
+
     public int deleteFirst(){
         int val= head.value;
         head=head.next;

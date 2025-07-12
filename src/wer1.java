@@ -12,5 +12,7 @@ public class wer1 {
         list.display();
         System.out.println(list.deleteFirst());
         list.display();
+        System.out.println(list.deleteLast());
+        list.display();
     }
 }
