@@ -25,17 +25,22 @@ public class nth_fromLast {
         }
         return slow;
     }
-    public static void nthNode3(Node head,int n){
+    public static Node nthNode3(Node head,int n){
         Node slow=head;
         Node fast=head;
         for (int i = 1; i <=n ; i++) {
             fast=fast.next;
+        }
+        if(fast==null){
+            head=head.next;
+            return head;
         }
         while (fast.next!=null){
             slow=slow.next;
             fast=fast.next;
         }
          slow.next=slow.next.next;
+        return head;
     }
     public static void display(Node head){
         Node temp=head;
@@ -68,7 +73,7 @@ public class nth_fromLast {
        // Node q=nthNode3(a,3);
        // System.out.println(q.data);
         display(a);
-        nthNode3(a,2);
+        a=nthNode3(a,6);
         display(a);
     }
 }
