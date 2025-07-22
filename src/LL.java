@@ -25,17 +25,17 @@ public class LL {
         size++;
 
     }
-    public void insert(int val,int index){
-        if(index==0){
+    public void insert(int val,int inde){
+        if(inde==0){
             insertFirst(val);
             return;
         }
-        if(index==size){
+        if(inde==size){
             insertLast(val);
             return;
         }
         Node temp= head;
-        for (int i = 1; i <index ; i++) {
+        for (int i = 1; i <inde ; i++) {
            temp=temp.next;
         }
         Node node=new Node(val,temp.next);
