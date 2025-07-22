@@ -14,5 +14,7 @@ public class LL1 {
       list.display();
       System.out.println(list.delete(2));
       list.display();
+      System.out.println(list.find(2));
+      list.display();
     }
 }
