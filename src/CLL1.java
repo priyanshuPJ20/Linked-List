@@ -3,10 +3,10 @@ public class CLL1 {
         CLL list = new CLL();
         list.insert(23);
         list.insert(3);
-        list.insert(19);
+        list.insert(1);
         list.insert(75);
         list.display();
-        list.delete(19);
+        list.delete(1);
         list.display();
     }
 }
